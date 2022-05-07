@@ -1,5 +1,5 @@
 .popular{
-    margin-top: 40px;
+    margin-top: 30px;
     font-family: Dosis;
 }
 /* .popular .coffees{
@@ -11,7 +11,7 @@
     height: auto;
     display: flex;
     overflow: hidden;
-    padding: 15px;
+    padding: 12px 15px;
     border-bottom: 1px solid #00000011;
 }
 .popular .coffee>div{
