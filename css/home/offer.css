@@ -1,0 +1,55 @@
+.body .mainOffer {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    flex-flow: row nowrap;
+    scroll-snap-type: x mandatory;
+}
+.body .mainOffer::-webkit-scrollbar{
+    display: none;
+}
+.body .mainOffer .offerImage{
+    width: calc(100% - 20px * 2);
+    margin: 0px 20px 0 20px;
+    /* width: 100%; */
+    aspect-ratio: 2 / 1;
+    background-color: transparent;
+    border-radius: 17px;
+    /* background-image: url("../../images/mainOffer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    flex: none;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.body .mainOffer img {
+    aspect-ratio: 2 / 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+.body .offerTopDiv .slider{
+    width: 100%;
+    /* background-color: #eee; */
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.body .offerTopDiv .slider .dot{
+    height: 7px;
+    aspect-ratio: 1 / 1;
+    border-radius: 7px;
+    transition: 0.2s linear aspect-ratio,
+                0.2s linear background-color;
+    background-color: #ccc;
+}
+.body .offerTopDiv .slider .dot.active{    
+    background-color: black;
+    aspect-ratio: 2 / 1;
+}

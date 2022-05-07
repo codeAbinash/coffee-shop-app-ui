@@ -1,0 +1,99 @@
+.popular{
+    margin-top: 40px;
+    font-family: Dosis;
+}
+/* .popular .coffees{
+    border-top: 1px solid #00000011; 
+    margin-top: 20px;
+} */
+.popular .coffee{
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    padding: 15px;
+    border-bottom: 1px solid #00000011;
+}
+.popular .coffee>div{
+    flex: none;
+}
+.popular .coffee .left{
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    /* height: 90px; */
+    /* background-color: antiquewhite; */
+    /* overflow: hidden; */
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.popular .coffee .left img{
+    width: 95%;
+    border-radius: inherit;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 2px 15px 0px #00000044;
+}
+.popular .coffee .right{
+    /* min-width: 100px; */
+    padding: 5px;
+    width: calc(100% - 100px);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-between
+}
+.popular .coffee .right .name{
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+.popular .coffee .right .tags{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow:auto;
+    flex-flow: row nowrap;
+}
+.popular .coffee .right .tags::-webkit-scrollbar{
+    display: none;
+}
+.popular .coffee .right .tags > span{
+    padding: 4px 10px;
+    flex-wrap: nowrap;
+    width: auto;
+    /* background-color: var(--color); */
+    color: var(--color);
+    border: 1px solid var(--color);
+    margin: 0 7px 0 0;
+    font-size: 0.7em;
+    border-radius: 100px;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular .coffee .right .tags > span img{
+    height: 1em;
+    padding-right:3px;
+}
+
+.popular .coffee .right .offDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.popular .coffee .right .offDiv .price{
+    font-size: 1.1em;
+}
+.popular .coffee .right .offDiv .off{
+    color: var(--color);
+    font-size: 0.8em;
+}

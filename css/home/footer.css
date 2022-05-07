@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    margin-top: 50px;
+    min-height: 100px;
+    /* background-color: antiquewhite; */
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+footer .from{
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: Dosis;
+    color: #888;
+}
+footer .dr{
+    font-family: lobster;
+    font-size: 1.1em;
+    /* font-weight: bold; */
+    /* color: var(--color); */
+    color: #777;
+}

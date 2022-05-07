@@ -1,0 +1,155 @@
+.productDetails{
+    width: 100%;
+    min-height: 200px;
+
+    background-color: lemonchiffon;
+}
+.productDetails .imageDiv{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100px;
+    aspect-ratio: 1 / 1;
+    background-color: tomato;
+}
+.productDetails .imageDiv img{
+    width: inherit;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: bottom;
+}
+.productDetails .detailsDiv{
+    background-color: white;
+    height: 200px;
+    /* margin-top: -30px; */
+    position: absolute;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: calc(100% - 30px);
+    /* height: 1000%; */
+    min-height: calc(100vh + 30px);
+    font-family: Dosis;
+    z-index: 101;
+}
+.productDetails .detailsDiv .slideBar{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 50px;
+    height: 4px;
+    background-color: violet;
+    border-radius: 100px;
+    background-color: #ddd;
+
+}
+.productDetails .detailsDiv .name{
+    font-size: 1.8em;
+    font-family: Dosis;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.productDetails .detailsDiv .priceRating{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.productDetails .detailsDiv .priceRating .price{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.productDetails .detailsDiv .priceRating .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDetails .detailsDiv .priceRating .rating span{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color);
+
+}
+.productDetails .detailsDiv .priceRating .rating span span{
+    color: #aaa;
+    /* font-size: 0.8em; */
+    font-weight: normal;
+}
+.productDetails .detailsDiv .priceRating .rating img{
+    height: 0.9em;
+    margin-right: 3px;
+}
+
+.productDetails .detailsDiv  .text{
+    margin-top: 10px;
+    font-size: 0.95em;
+    /* opacity: 0.7; */
+    /* text-align: justify; */
+}
+.productDetails .tags{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    /* overflow: auto; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 5px; */
+    /* margin: 0; */
+    margin-top: 20px;
+    gap: 0 5px;
+}
+.productDetails .tags::-webkit-scrollbar{
+    display: none;
+}
+
+.productDetails .tags .tag{
+    font-family: "Nunito Sans";
+    font-size: 1em;
+    padding: 7px 25px;
+    border-radius: 50px;
+    border: 2px solid var(--color);
+    color: var(--color);
+    margin: -5px;
+    flex: none;
+    /* font-weight: bold; */
+    transform: scale(0.8);
+    transition: 0.1s linear color,
+                0.1s linear background-color,
+                0.1s linear transform;
+}
+.productDetails .tags .tag:hover{
+    background-color: var(--color);
+    color: white;
+
+}
+
+
+.productDetails .visit{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.productDetails .visit button{
+    width: calc(100% - 20px * 2);
+    /* font-size: 0em; */
+    font-family: "Dosis";
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 18px;
+    background-color: var(--color2);
+    color: white;
+    /* box-shadow: 2px 2px 15px 0px #00000066; */
+}

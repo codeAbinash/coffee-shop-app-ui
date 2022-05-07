@@ -1,0 +1,34 @@
+.filters{
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-color: brown;
+    margin-top: 15px;    
+    flex-flow: row nowrap;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding:0 10px;
+    overflow: auto;
+}
+.filters .filter{
+    min-width: 100px;
+    width: auto;
+    height: inherit;
+    background-color: aqua;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.filters img{
+    width: 20px;
+}
+.filters::-webkit-scrollbar{
+    display: none;
+}
+
+

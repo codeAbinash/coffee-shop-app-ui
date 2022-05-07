@@ -1,0 +1,35 @@
+.locationsDiv{
+    margin-top: 40px;
+    font-family: Dosis; 
+    
+}
+.locationsDiv .heading1 h2{
+    font-size: 1.3em;
+}
+
+.locationsDiv .location{
+    width: calc(100% - 20px * 2);
+    aspect-ratio: 2 / 1;
+    display: block;
+    margin: 0 auto 0 auto;
+    background-color: #9900ff;
+    filter: contrast(130%) brightness(120%);
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locationsDiv .soon{
+    margin-top: 20px;
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+}
+
+.locationsDiv .location img{
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}

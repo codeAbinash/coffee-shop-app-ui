@@ -1,0 +1,53 @@
+.trendingDiv{
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    font-family: Dosis;
+}
+.trendingDiv .trending{
+    width: 100%;
+    scroll-behavior: smooth;
+    min-height: 50px;
+    margin-top: 20px;
+    display: flex;
+    overflow: auto;
+    flex-flow: row nowrap;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.trendingDiv .trending::-webkit-scrollbar{
+    display: none;
+}
+.trendingDiv .trending .trend{
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: none;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+/* .trendingDiv .trending .trend:first-child{
+    margin-left: 20px;
+} */
+.trendingDiv .trending img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.trendingDiv .trending .trend span{
+    font-size: 0.85em;
+    /* font-weight: 400; */
+    text-align: center;
+    padding-top: 6px;
+    /* color: #444; */
+    opacity: 0.8;
+    font-weight: 600;
+    /* color: var(--color); */
+}
+

@@ -1,0 +1,37 @@
+.getOffer{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.getOffer .heading1{
+    font-family: dosis;
+}
+
+.getOffer .offerDiv{
+    width: calc(100% - 2 * 20px);
+    display: block;
+    margin: 10px auto 0 auto;
+    /* margin: 10px 0 0 0; */
+    aspect-ratio: 3 / 1;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+    background-color: var(--color2);
+    /* background-color: #000; */
+    
+    /* color: var(--color); */
+}
+.getOffer .offerDiv h2{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-family: dosis;
+    text-transform: capitalize;
+}
+
+.getOffer .offerDiv p{
+    margin-top: 7px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+    /* font-family: ; */
+}

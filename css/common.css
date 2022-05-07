@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    color:var(--color2);
+}
+
+:root{
+    --color:#945803;
+    --color2:#331e00;
+}
+.hide{
+    display: none;
+}
+.press, .pressBig{transition: 0.1s linear transform;}
+.press:active{transform: scale(0.95);}
+
+
+.pressBig:active{transform: scale(0.98);}
+a{text-decoration: none;color: dodgerblue;}
+a:visited{color: dodgerblue;}
+a:active{color: dodgerblue;}
+
+
+
+.heading1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    margin: 7px 20px 0 20px;
+    margin-bottom: 10px;
+    font-family: 'Dosis';
+    
+}
+.heading1 span{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #945803;
+}
